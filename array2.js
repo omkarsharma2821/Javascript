@@ -10,7 +10,6 @@ console.log(all_colors);
 // output : [ 'red', 'green', 'blue', 'yellow', 'pink', 'black' ]
 
 // spread operator add elements
-
 const all_colors = [...colors, ...colors2];  // [...add1, ...add2, ...add3, .....so on];
 console.log(all_colors);
 // output: [ 'red', 'green', 'blue', 'yellow', 'pink', 'black' ]
