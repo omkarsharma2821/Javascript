@@ -5,8 +5,8 @@ colors.push(colors2);
 console.log(colors);
 // output : [ 'red', 'green', 'blue', [ 'yellow', 'pink', 'black' ] ]
 
-const all_colors = colors.concat(colors2);
-console.log(all_colors);
+// const all_colors = colors.concat(colors2);
+// console.log(all_colors);
 // output : [ 'red', 'green', 'blue', 'yellow', 'pink', 'black' ]
 
 // spread operator add elements
