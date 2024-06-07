@@ -1,6 +1,7 @@
 const colors = ["red", "green", "blue"];
 const colors2 = ["yellow", "pink", "black"];
 
+
 colors.push(colors2);
 console.log(colors);
 // output : [ 'red', 'green', 'blue', [ 'yellow', 'pink', 'black' ] ]
