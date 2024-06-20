@@ -5,7 +5,6 @@ let hobby = "coding";
 console.log(`Hello my nam is ${name} and my hobby is ${hobby}.`);
 
 // string methods
-
 const str = new String('Omkar sharma 108')
 console.log(str.length);
 console.log(str.charAt(3));
