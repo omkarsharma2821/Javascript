@@ -16,4 +16,5 @@ console.table([accountEmail, accountID, accountPassword, accountCity, accountSta
 /*
 Note: Prefer not to use var 
 Reason: causes issues in black and function scope
+var have function scope and let, const have block scope
 */
