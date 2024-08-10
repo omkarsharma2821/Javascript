@@ -13,6 +13,9 @@ console.log(str.slice(0,4));
 console.log(str.replace(' ', '@'));
 console.log(str.replaceAll(' ', '@'));
 console.log(str.trim());
+console.log(str.toUpperCase());
+console.log(str.indexOf('a'));
+
 
 const min = 10;
 const max = 20;
