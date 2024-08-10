@@ -17,7 +17,7 @@
 // BigInt => bigint
 // Symbol => symbol
 
-// non-primitive data types
+// non-primitive data types {Reference types}
 
 // Object => object
 // Array => object
