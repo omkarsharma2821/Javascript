@@ -11,7 +11,6 @@ const user ={
 console.log(user["email"]);
 console.log(user.name);
 console.log(user.mySym);
-console.log(user[mySym]);
 
 
 
