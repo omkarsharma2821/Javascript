@@ -5,12 +5,14 @@ const user ={
     age: 30,
     email: "omkar@gmail.com",
     location: 'Pune', 
-    mySym: "Key1", 
+    [mySym]: "Key1", 
 }
 
 console.log(user["email"]);
 console.log(user.name);
-console.log(user.mySym);
+console.log(user[mySym]);
+console.log(typeof mySym);
+
 
 
 
