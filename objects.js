@@ -19,6 +19,25 @@ user.greeting = function(){
 console.log(user.greeting());
 
 
+const course = {
+    title: "JavaScript",
+    instructor: "Omkar",
+    published: true,
+}
+
+
+const keys = Object.keys(course);
+console.log(keys);
+
+// console.log(course.instructor); instead of this we can use object destructuring
+
+const {title, instructor, published} = course;  // this is called object destructuring also used in react
+console.log(title, instructor, published);
+
+// move your work on someone else's head is called API
+// https://api.github.com/users/omkarsharma2821
+// https://randomuser.me/api/
+
 
 
 
