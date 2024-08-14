@@ -13,6 +13,12 @@ console.log(user.name);
 console.log(user[mySym]);
 console.log(typeof mySym);
 
+user.greeting = function(){
+    console.log(`Hello ${this.name}`);
+}
+console.log(user.greeting());
+
+
 
 
 
