@@ -19,13 +19,14 @@ Reason: causes issues in black and function scope
 var have function scope ,let and const have block scope
 */
 
-
+let b = 300;
 // problem appears when multiple coder are there and using var keyword which will lead to problems
 if (true){  // this if block is a block scope & above variables will in global scope
     var a = 10;
     let b = 20;
     const c = 30;
+    console.log("INNER BLOCK : ", a);
 }
 console.log(a); // 10
-console.log(b); // ReferenceError: b is not defined
-console.log(c); // ReferenceError: c is not defined
+// console.log(b); // ReferenceError: b is not defined
+// console.log(c); // ReferenceError: c is not defined
