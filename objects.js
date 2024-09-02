@@ -2,12 +2,13 @@ const mySym = Symbol("Key1");
 
 const user ={
     name: 'Omkar',
+    "full name" : "Omkar Sharma", // No chances you can access this with (.dot)
     age: 30,
     email: "omkar@gmail.com",
     location: 'Pune', 
     [mySym]: "Key1", 
 }
-
+// accessing methods
 console.log(user["email"]);
 console.log(user.name);
 console.log(user[mySym]);
