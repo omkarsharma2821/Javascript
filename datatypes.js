@@ -1,6 +1,7 @@
 // Datatypes in JavaScript
 
-// JavaScript is a loosely typed language, which means you don't have to declare the type of a variable when you declare it. The type will be determined dynamically at runtime.
+// JavaScript is a loosely typed language, which means you don't have to declare the type of a variable when you declare it. 
+// The type will be determined dynamically at runtime.
 
 //example of dynamic type language
 
