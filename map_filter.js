@@ -19,5 +19,13 @@ const books = [
   ];
 
 const userbooks = books.filter((bk) => bk.publish >=1995 && bk.genre === "History" ) 
-  console.log(userbooks);
+//   console.log(userbooks);
+
+
+// +++++++++++++++++++++++++++++++ MAP ++++++++++++++++++++++++++++++++++++++++
+
+const myNum = [1,2,3,4,5,6,7,8,9,10];
+const ans = myNum.map( (num) => num+10 );
+console.log(ans);
+
   
