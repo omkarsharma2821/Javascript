@@ -15,5 +15,26 @@ const myobject = {
 }
 
 for (const key in myobject) {
-    console.log(`${key} is ${myobject[key]}`);   
+    // console.log(`${key} is ${myobject[key]}`);   
 }
+
+const course = [
+    {
+        branch: "cs",
+        fees : 500,
+    },
+    {
+        branch: "ece",
+        fees : 400,
+    },
+    {
+        branch: "me",
+        fees : 300,
+    }
+]
+
+course.forEach( (item) => {
+    console.log(item.branch);
+    
+})
+
