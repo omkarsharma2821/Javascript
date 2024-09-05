@@ -33,8 +33,8 @@ const course = [
     }
 ]
 
-course.forEach( (item) => {
-    console.log(item.branch);
+course.forEach( (item , index, course) => {
+    console.log(item.branch, index);
     
 })
 
