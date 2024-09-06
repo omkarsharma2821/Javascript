@@ -35,6 +35,7 @@ input{
 #result{
  font-size: 30px;  
  color: red; 
+ text-align: center;
 }
 
 #weight-guide{
