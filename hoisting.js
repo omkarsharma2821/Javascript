@@ -9,9 +9,10 @@ let x = 10;
 // same error will come with const because they have block scope
 
 
-greetingMessage();
+greetingMessage();  // welcome user
 function greetingMessage(){
     console.log(`Welcome user`);
 }
 
-
+greeting(); // Cannot access 'greeting' before initialization
+const greeting = ((greet) => console.log("Hurray!!!"))
