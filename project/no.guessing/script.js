@@ -60,14 +60,14 @@ function displayGuess(guess){
 }
 
 function displayMessage(message){
-    lowOrHi.innerHTML = `<h2>${message}</h2>`
+    lowOrHi.innerHTML = `<h3>${message}</h3>`
 }
 
 function endGame(){
     userInput.value = '';
     userInput.setAttribute('disabled', '');
     p.classList.add('button');
-    p.innerHTML = `<button id="newgame">Start new Game</button>`;
+    p.innerHTML = `<button id="newgame">Start again</button>`;
     startOver.appendChild(p);
     playGame = false;
     newGame();

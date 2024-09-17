@@ -4,10 +4,11 @@
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
+    font-size: 24px;
 }
 
 #mainHeading{
-    font-size: 90px;
+    font-size: 100px;
     font-weight: 100;
     font-stretch: condensed;
     text-align: center;
@@ -16,7 +17,7 @@
 }
 
 .form{
-    margin-top: 40px;
+    /* margin-top: 20px; */
     text-align: center;
     padding: 50px;
 } 
@@ -35,13 +36,13 @@
 #submit {
     border-radius: 5px;
     width: 50%;
-    max-width: 200px;
+    max-width: 180px;
     padding: 10px;
     background-color: #007BFF;
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
