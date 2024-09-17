@@ -31,7 +31,7 @@ function validateGuess(guess){
         alert("Please enter a number less than 100")
     } else {
         previousGuess.push(guess)
-        if(numGuess === 11){
+        if(numGuess === 10){
             displayGuess(guess);
             displayMessage(`Game Over. Random number was ${randomNumber}`);
             endGame();
@@ -83,6 +83,7 @@ function newGame(){
         remaining.innerHTML = `${11 - numGuess}`
         userInput.removeAttribute('disabled')
         startOver.removeChild(p)
+        lowOrHi.innerHTML = '';
         playGame = true;
     })
 }
