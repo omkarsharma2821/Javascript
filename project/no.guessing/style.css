@@ -21,15 +21,71 @@
     padding: 50px;
 } 
 
- #guessfield{
-    padding: 20px;
+#guessfield {
+    padding: 18px;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
     text-align: center;
-    width: 400px;
+    margin-bottom: 0px;
+    transition: all 0.3s ease;
 }
-#submit{
+#submit {
     border-radius: 5px;
-    width: 200px;
+    width: 50%;
+    max-width: 200px;
     padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+#submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    #mainHeading {
+        font-size: 40px;
+    }
+
+    .subHeading {
+        font-size: 16px;
+    }
+
+    #guessfield {
+        width: 80%;
+        padding: 10px;
+    }
+
+    #submit {
+        width: 70%;
+    }
+}
+#newgame {
+    border-radius: 5px;
+    width: 50%;
+    max-width: 200px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#newgame:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

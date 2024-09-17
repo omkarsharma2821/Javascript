@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
   </head>
-  <body>
+  <body >
     <div>
       <h1 id="mainHeading">Crack the Code</h1>
       <h3 id="subHeading">Try and Guess a Number Between 1 to 100.</h3>
@@ -15,7 +16,13 @@
     <form class="form">
       <input type="text" id="guessfield" />
       <br><br><br>
-      <input type="button" id="submit" value="submit guess" />
+      <input type="submit" id="submit" value="submit guess" />
     </form>
+    <div class="results">
+      <p>Previous Guesses : <span class="guessed"></span></p>
+      <p>Remaining Guesses : <span class="remaining"></span></p>
+      <p class="loworhigh"></p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
