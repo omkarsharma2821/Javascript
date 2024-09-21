@@ -33,7 +33,7 @@ function validateGuess(guess){
         previousGuess.push(guess)
         if(numGuess === 10){
             displayGuess(guess);
-            displayMessage(`Game Over. Random number was ${randomNumber}`);
+            displayMessage(`Game Over: Random number was ${randomNumber}`);
             endGame();
         } else {
             displayGuess(guess)
@@ -60,14 +60,14 @@ function displayGuess(guess){
 }
 
 function displayMessage(message){
-    lowOrHi.innerHTML = `<h3>${message}</h3>`
+    lowOrHi.innerHTML = `<h4>${message}</h4>`
 }
 
 function endGame(){
     userInput.value = '';
     userInput.setAttribute('disabled', '');
     p.classList.add('button');
-    p.innerHTML = `<button id="newgame">Start again</button>`;
+    p.innerHTML = `<button id="newgame">Restart!</button>`;
     startOver.appendChild(p);
     playGame = false;
     newGame();
