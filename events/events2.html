@@ -11,10 +11,23 @@
     <button class="stp">stop</button>
 </body>
 <script>
-    document.querySelector('.btn').addEventListener('click',function(e){
-        setTimeout(function(){
-            console.log("Welcome");
-        },2000)
-    },false ) 
+    // document.querySelector('.btn').addEventListener('click',function(e){
+    //     setTimeout(function(){
+    //         console.log("Welcome");
+    //     },2000)
+    // },false ) 
+
+    let stop;
+    const changeText = document.querySelector('.btn').addEventListener('click', function(){
+        console.log("Clicked");
+        stop = setTimeout(() => {
+            document.querySelector('h1').innerHTML = "Omkar"
+        }, 5000);
+    }, false)
+
+    const stopChangetext = document.querySelector('.stp').addEventListener('click', ()=>{
+        console.log("Stopped");
+        clearTimeout(stop);
+    })
 </script>
 </html>
