@@ -31,3 +31,43 @@ new Promise((resovle, reject) => {
 }).then((user)=> {
     console.log(user)
 }).catch(() => console.log('Error'))
+
+
+const PromiseTwo = new Promise(function(resovle, reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resovle({username: 'Omkar', password : 123});
+        } else{
+            reject("error : something went wrong")
+        }
+    }, 1000)
+});
+
+PromiseTwo.then(function(user){
+    console.log(user);
+}).catch(() => console.log("error2"));
+
+
+const promisethree = new Promise(function(resovle, reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resovle({username: 'Omkar', password : 123});
+        } else{
+            reject("error : something went wrong")
+        }
+    }, 1000)
+})
+
+// aysnc and await direct cannot handle the error 
+async function consumePromiseThree(){
+    try {
+        const response = await promisethree;
+        console.log(response);
+    } catch (error) {
+        console.log("err");
+    }
+}
+
+consumePromiseThree();
