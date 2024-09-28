@@ -1,3 +1,20 @@
+// A Promise in JavaScript represents an eventual completion (or failure) of an asynchronous operation
+// It allows you to write asynchronous code
+// more readable and manageable way, avoiding callback hell 
+// A Promise can be in one of three states:
+// Pending, Fulfilled, Rejected
+// Key Methods: then(), catch(), finally()
+
+// -------------------------------------------------------------------------------------------
+
+// callback: A callback is a function passed into another function as an argument
+// Asynchronous Callback (Using setTimeout)
+// function printMessage() {
+//     console.log("This message is displayed after 2 seconds");
+//   }
+//   setTimeout(printMessage, 2000); // Executes the callback after 2 seconds
+  
+
 // promise creation
 
 const promiseOne = new Promise(function(resovle, reject){
