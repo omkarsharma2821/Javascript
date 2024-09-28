@@ -71,3 +71,12 @@ async function consumePromiseThree(){
 }
 
 consumePromiseThree();
+
+fetch('https://api.github.com/users/omkarsharma2821')
+.then(function(response){
+    return response.json();
+}).then(function(data){
+    console.log(data);
+})
+
+// fetch will be executed first because it is in priority queue
